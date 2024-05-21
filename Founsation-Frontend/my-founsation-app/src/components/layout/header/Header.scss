@@ -1,0 +1,27 @@
+header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Nunito;
+    .header-left{
+        h2{
+            color: rgb(253,95,0);
+        }
+    }
+    .header-right{
+        nav{
+             ul{
+                display: flex;
+                gap: 15px;
+                li{
+                    list-style: none;
+                    cursor: pinter;
+                }
+                li:hover{
+                    color: rgb(253,95,0);
+                }
+             }
+        }
+    }
+}
