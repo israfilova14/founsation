@@ -1,0 +1,63 @@
+.leadership-box{
+    h1{
+        text-align: center;
+        margin-top: 40px;
+        font-size: 52px;
+    }
+    .leadership-title{
+        text-align: center;
+        margin-top: 30px;
+        width: 500px;
+        color: #939393;
+        margin: 20px auto;
+        font-size: 20px;
+    }
+    .cards-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        
+        .card-box{
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+           justify-content: center;
+           align-items: center;
+            font-size: 18px;
+            gap: 12px;
+            border: 1px solid #939393;
+            padding: 20px;
+            .company-author{
+                color: #939393;
+                font-size: 18px;
+            }
+            .lorem{
+                color: #939393;
+                font-size: 18px;
+                width: 220px;
+                margin-top: 30px;
+            }
+            .person{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+            .icons-box{
+                display: flex;
+                gap: 4px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+     .leadership-box{
+        .cards-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+     }
+  }

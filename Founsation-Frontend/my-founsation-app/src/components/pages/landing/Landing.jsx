@@ -12,7 +12,8 @@ import 'swiper/css/scrollbar';
 const Landing = () => {
   return (
     <div className="landing-page">
-        <Swiper
+       <div className="landing-page-top">
+       <Swiper
         // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
@@ -24,26 +25,37 @@ const Landing = () => {
         onSlideChange={() => console.log('slide change')}
     >
         <SwiperSlide>
-            <img src={image1} alt="" />
+            <img src={image1} alt="" className='swiper-image'/>
             
         </SwiperSlide>
         <SwiperSlide>
-            <img src={image2} alt="" />
+            <img src={image2} alt="" className='swiper-image'/>
         </SwiperSlide>
-    </Swiper>
+      </Swiper>
+       </div>
     <div className="activity-goals">
-        <div className="goal-1">
-            <h2>RESCUE AN ORPHAN</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, nihil. Odio blanditiis amet at</p>
+        <div className="goal-1 goal">
+          <h2>RESCUE AN ORPHAN</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+            nihil. Odio blanditiis amet at
+          </p>
         </div>
-        <div className="goal-2">
-            <h2>FEED THE HUNGRY</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, nihil. Odio blanditiis amet at</p>
+        <div className="goal-2 goal">
+          <h2>FEED THE HUNGRY</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+            nihil. Odio blanditiis amet at
+          </p>
         </div>
-        <div className="goal-3">
-            <h2>FREE EDUCATION</h2>
+        <div className="goal-3 goal">
+          <h2>FREE EDUCATION</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+            nihil. Odio blanditiis amet at
+          </p>
         </div>
-    </div>
+      </div>
     </div>
 
   )

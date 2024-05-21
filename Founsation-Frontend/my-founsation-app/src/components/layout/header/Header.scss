@@ -23,5 +23,25 @@ header{
                 }
              }
         }
+        .menu-box{
+            display: none;
+        }
     }
 }
+@media only screen and (max-width: 992px) {
+     header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header-right{
+            nav{
+                ul{
+                    display: none;
+                }
+            }
+            .menu-box{
+                display: block;
+            }
+        }
+     }
+  }

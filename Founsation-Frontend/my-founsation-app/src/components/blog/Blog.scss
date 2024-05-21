@@ -1,0 +1,57 @@
+.blog-box{
+    h1{
+        text-align: center;
+        margin-top: 40px;
+        font-size: 52px;
+        margin-top: 90px;
+    }
+    .blog-title{
+        text-align: center;
+        margin-top: 30px;
+        width: 500px;
+        color: #939393;
+        margin: 30px auto;
+        font-size: 20px
+    }
+    .company-boxes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .company-box{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 20px;
+            h2{
+                color: rgb(253,95,0);
+                font-size: 32px;
+            }
+            span{
+                color: rgb(253,95,0);
+            }
+            img{
+                width: 500px;
+                height: 400px;
+            }
+            .company-title{
+                width: 420px;
+                font-size: 17px;
+            }
+            a{
+                color: rgb(253,95,0);
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .blog-box{
+      .company-boxes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+ }

@@ -1,7 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import "../header/Header.scss"
-
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import MenuIcon from '@mui/icons-material/Menu';
 const Header = () => {
   return (
     <header>
@@ -23,10 +24,16 @@ const Header = () => {
                         <NavLink to={'/post'} style={{textDecoration : "none", color: "black"}}>Post</NavLink>
                     </li>
                     <li>
-                        <NavLink to={'/basket'} style={{textDecoration : "none", color: "black"}}>Basket</NavLink>
+                        <NavLink to={'/wishlist'} style={{textDecoration : "none", color: "black"}}>Wishlist</NavLink>
+                    </li>
+                    <li>
+                        <FavoriteBorderIcon></FavoriteBorderIcon>
                     </li>
                 </ul>
             </nav>
+            <div className="menu-box">
+            <MenuIcon></MenuIcon>
+            </div>
         </div>
     </header>
   )

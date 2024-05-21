@@ -1,6 +1,53 @@
- .landing-page{
-    .activity-goals{
+.landing-page {
+    .activity-goals {
+      margin-top: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      .goal {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        border: 1px solid black;
+        padding: 30px;
+        color: white;
+        p {
+          width: 400px;
+          font-size: 18px;
+        }
+      }
+      .goal-1 {
+        background-color: rgb(171, 164, 164);
+      }
+      .goal-2 {
+        background-color: rgb(253, 95, 0);
+      }
+      .goal-3 {
+        background-color: #f23a2e;
+      }
     }
- }
+  }
+  @media only screen and (max-width: 992px) {
+     .landing-page{
+      display: flex;
+      flex-direction: column;
+      .activity-goals{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .landing-page-top{
+        width: 100%;
+        
+        .swipper-image{
+          object-fit: cover;
+        }
+      }
+    
+     }
+  }
  
